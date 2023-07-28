@@ -12,6 +12,6 @@ class ItemTest(TestCase):
         item = ItemModel('test', 19.99)
         expected = {
             'name': 'test',
-            'price': 19.99
+            'price': 19.90
         }
         self.assertEqual(expected, item.json(), "The items are not same")
